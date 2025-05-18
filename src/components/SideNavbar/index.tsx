@@ -13,15 +13,15 @@ export default function SideNavbar({ ...props }: Props) {
         <Sidebar
             {...props}
             width="242px !important"
-            rootStyles={{ [`${sidebarClasses.container}`]: { gap: 36 } }}
-            className={`${props.className} flex flex-col h-screen pt-[42px] gap-9 top-0 md:pt-5 bg-background-navigation_bar___footer !sticky overflow-auto`}
+            rootStyles={{ [`${sidebarClasses.container}`]: { gap: 36,} }}
+            className={`${props.className} flex flex-col h-screen pt-[42px] gap-9 top-0 md:pt-5 bg-[#212121] !sticky overflow-auto`}
         >
             <Img 
-                src="img_sidebar_logo.png"
+                src="InsightHub.png"
                 width={84}
                 height={20}
                 alt="Sidebarlogoone"
-                className="ml-11 h-[20px] w-[84px] object-contain"
+                className="ml-11 h-[20px] w-[84px] object-contain mb-8"
             />
             <Menu
                 menuItemStyles={{
@@ -39,7 +39,7 @@ export default function SideNavbar({ ...props }: Props) {
                 className="flex w-full flex-col self-stretch"
             >
                 <MenuItem>Home</MenuItem>
-                <MenuItem>Recent</MenuItem>
+                <MenuItem>Recents</MenuItem>
             </Menu>
         </Sidebar>
     );
